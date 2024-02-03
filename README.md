@@ -7,5 +7,12 @@ few things, like number of layers, and will set things up the way I want
 them to be set up. Right now, it uses a template that has my org's logo
 on it.
 
+To use it, you can just use it from the command line directly from
+GitHub like this:
+
+```
+$ cookiecutter gh:rebma-io/kicad-template
+```
+
 Please feel free to fork this and adapt it to whatever it is you want as
 your default.
