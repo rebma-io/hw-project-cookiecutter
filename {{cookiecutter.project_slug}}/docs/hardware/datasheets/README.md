@@ -11,4 +11,9 @@ For the date retrieved, use the format `YYYYMMDD`.
 
 Note that we do not necessarily need to include every 
 [jellybean part](https://en.wiktionary.org/wiki/jellybean_part), unless 
-there's some specific reason for it.
+there's some specific reason for it. This means, probably, nothing for 
+resistors, maybe for capacitors, and definitely for inductors.
+
+{% raw -%}
+{{ render_datasheets_listing() }}
+{%- endraw %}

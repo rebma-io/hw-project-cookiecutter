@@ -1,11 +1,18 @@
 # Project information
-site_name: "{{cookiecutter.project_name}}"
-site_author: "{{cookiecutter.full_name}}"
-site_description: "{{cookiecutter.project_short_description}}"
+site_name: "{{ cookiecutter.project_name }}"
+site_author: "{{ cookiecutter.full_name }}"
+site_description: "{{ cookiecutter.project_short_description }}"
 
 # Configuration
 theme:
   name: material
+  palette:
+    scheme: default
+    primary: indigo
+    accent: indigo
+  font:
+    text: Fira Sans
+    code: Fira Mono
   features:
     - navigation.tabs
     - header.autohide
@@ -19,22 +26,26 @@ nav:
     - Mechanical: hardware/mechanical.md
     - Wiring: hardware/wiring.md
   - Software: software/README.md
-  {% if cookiecutter.create_blog %}- Updates: blog/index.md{% endif %}
-  {% if cookiecutter.create_changelog %}- Change Log: CHANGELOG.md{% endif %}
+  {% if cookiecutter.create_blog == "y" %}- Updates: updates/index.md{% endif %}
+  {% if cookiecutter.create_changelog == "y" %}- Changelog: CHANGELOG.md{% endif %}
 
 # Repository
-repo_url: https://github.com/{{ cookiecutter.github_org }}/{{cookiecutter.project_slug}}
-repo_name: {{ cookiecutter.github_org}}/{{ cookiecutter.project_slug }}
+repo_url: https://github.com/{{ cookiecutter.github_org }}/{{ cookiecutter.project_slug }}
+repo_name: {{ cookiecutter.github_org }}/{{ cookiecutter.project_slug }}
 
 # Plugins
 plugins:
   - search
-  - macros
-  - mermaid2
+  - macros:
+      module_name: macros
+  - mermaid2:
+      javascript: https://unpkg.com/mermaid@10.9.0/dist/mermaid.min.js
   {% if cookiecutter.create_blog %}
-  - blog
+  - blog:
+      blog_dir: updates
+      post_readtime: true
   - rss:
-      match_path: blog/posts/.*
+      match_path: updates/posts/.*
       enabled: !ENV [CI, false]
       date_from_meta:
         as_creation: date
@@ -72,9 +83,5 @@ markdown_extensions:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
 
-# Extra Javascript
-extra_javascript:
-  - https://unpkg.com/mermaid@10.9.0/dist/mermaid.min.js
-
 # Copyright
-copyright: "Copyright {% now 'local', '%Y' %} {{cookiecutter.full_name}}"
+copyright: "Copyright {% now 'local', '%Y' %} {{ cookiecutter.full_name }}"

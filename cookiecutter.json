@@ -10,6 +10,7 @@
     "create_author_file": "y",
     "create_changelog": "n",
     "create_blog": "n",
+    "create_github_action": "n",
     "open_source_license": [
         "CERN-OHL-S",
         "CERN-OHL-W",
@@ -24,5 +25,21 @@
         "MIT",
         "BSD",
         "Not open source"
-    ]
+    ],
+    "__prompts__": {
+        "full_name": "Your full name",
+        "email": "Your email",
+        "github_username": "Your Github user name",
+        "github_org": "Your Github organization",
+        "project_name": "Project name",
+        "project_slug": "Project slug",
+        "project_short_description": "Short description",
+        "version": "Version",
+        "create_author_file": "Create AUTHORS.md",
+        "create_changelog": "Create CHANGELOG.md",
+        "create_blog": "Create an update blog",
+        "create_github_action": "Create a Github action",
+        "open_source_license": "Choose a license"
+    }
+
 }

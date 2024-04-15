@@ -1,6 +1,6 @@
-# KiCad Cookiecutter Template
+# Hardware Project Cookiecutter Template
 
-This is a simple
+This is an opinionated
 [cookiecutter](https://cookiecutter.readthedocs.io/en/stable/) template
 that will set up a directory structure for hardware projects. This is not 
 just PCB (see below), but also all the documentation, and space for 
