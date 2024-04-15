@@ -1,0 +1,12 @@
+[tool.poetry]
+name = "{{cookiecutter.project_name}}"
+version = "0.0.0"
+description = "{{cookiecutter.project_short_description}}"
+authors = ["{{cookiecutter.full_name}}"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+mkdocs-material = "^9"
+mkdocs-mermaid2-plugin = "^1.1"
+mkdocs-macros-plugin = "^1.0"
+wireviz = "^0.3"
