@@ -54,7 +54,7 @@ markdown_extensions:
   - pymdownx.tasklist:
       clickable_checkbox: true
       custom_checkbox: true
-  - pymdownx.arthmatex:
+  - pymdownx.arithmatex:
       generic: true
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
