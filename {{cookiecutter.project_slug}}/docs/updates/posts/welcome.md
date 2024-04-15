@@ -3,8 +3,7 @@ draft: true
 date: {% now 'utc' %}
 authors:
   - {{ cookiecutter.github_username }} 
-categories:
-  - HelloWorld
 ---
+# Willkommen. Bienvenue. Welcome. C'mon in.
 
-# Hello world!
+TODO: Write something meaningful here.
