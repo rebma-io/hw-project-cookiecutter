@@ -1,0 +1,5 @@
+authors:
+  {{ cookiecutter.github_username }}:
+    name: {{ cookiecutter.full_name }}
+    description: Creator
+    avatar: https://github.com/{{ cookiecutter.github_username }}.png

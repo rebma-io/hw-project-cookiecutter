@@ -9,4 +9,7 @@ python = "^3.10"
 mkdocs-material = "^9"
 mkdocs-mermaid2-plugin = "^1.1"
 mkdocs-macros-plugin = "^1.0"
+{% if cookiecutter.create_blog %}
+mkdocs-rss-plugin = "^1.12"
+{% endif %}
 wireviz = "^0.3"

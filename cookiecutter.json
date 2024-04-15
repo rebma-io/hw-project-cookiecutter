@@ -1,5 +1,5 @@
 {
-    "full_name": "Susan DOe",
+    "full_name": "Susan Doe",
     "email": "susan@nowhere.com",
     "github_username": "",
     "project_name": "KiCad Project",
@@ -7,6 +7,8 @@
     "project_short_description": "A new fun hardware project.",
     "version": "0.1.0",
     "create_author_file": "y",
+    "create_changelog": "n",
+    "create_blog": "n",
     "open_source_license": [
         "CERN-OHL-S",
         "CERN-OHL-W",
