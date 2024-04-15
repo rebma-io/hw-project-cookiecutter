@@ -18,7 +18,7 @@ nav:
       - Mechanical: hardware/mechanical.md
       - Wiring: hardware/wiring.md
   - Design:
-      - design/design.md
+      - design/index.md
   - Change Log:
       - CHANGELOG.md
 

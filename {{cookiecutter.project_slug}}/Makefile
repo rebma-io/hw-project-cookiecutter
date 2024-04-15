@@ -1,7 +1,7 @@
 .PHONY: serve build install
 
 install:
-	poetry install
+	poetry install --no-root
 
 build:
 	poetry run mkdocs build
