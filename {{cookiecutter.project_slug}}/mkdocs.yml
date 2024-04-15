@@ -23,8 +23,8 @@ nav:
   {% if cookiecutter.create_changelog %}- Change Log: CHANGELOG.md{% endif %}
 
 # Repository
-repo_url: https://github.com/rebma-io/{{cookiecutter.project_slug}}
-repo_name: rebma-io/{{ cookiecutter.project_slug }}
+repo_url: https://github.com/{{ cookiecutter.github_org }}/{{cookiecutter.project_slug}}
+repo_name: {{ cookiecutter.github_org}}/{{ cookiecutter.project_slug }}
 
 # Plugins
 plugins:
