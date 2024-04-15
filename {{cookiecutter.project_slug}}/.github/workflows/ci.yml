@@ -1,0 +1,21 @@
+name: ci
+on:
+  push:
+    branches:
+      - main
+env:
+  GITHUB_TOKEN: {% raw %}${{ secrets.GITHUB_TOKEN }}{% endraw %}
+permissions:
+  contents: write
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: 3.11
+          cache: "poetry"
+      - run: pip install poetry
+      - run: make install
+      - run: mkdocs gh-deploy --force
