@@ -1,23 +1,12 @@
 {
-    "full_name": "Chris Petrilli",
-    "email": "petrilli@rebma.io",
-    "github_username": "petrilli",
+    "full_name": "Susan DOe",
+    "email": "susan@nowhere.com",
+    "github_username": "",
     "project_name": "KiCad Project",
     "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
     "project_short_description": "A new fun hardware project.",
     "version": "0.1.0",
     "create_author_file": "y",
-    "pcb_layers": [
-        2,
-        4,
-        6,
-        8
-    ],
-    "copper_finish": [
-        "HAL SnPb",
-        "HAL lead-free",
-        "ENIG"
-    ],
     "open_source_license": [
         "CERN-OHL-S",
         "CERN-OHL-W",
