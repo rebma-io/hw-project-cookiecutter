@@ -14,7 +14,7 @@ theme:
 nav:
   - Home: index.md
   - Hardware:
-      - Overview: hardware/overview.md
+      - Overview: hardware/index.md
       - Mechanical: hardware/mechanical.md
       - Wiring: hardware/wiring.md
   - Design:
