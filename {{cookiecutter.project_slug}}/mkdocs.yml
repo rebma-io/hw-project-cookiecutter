@@ -1,0 +1,68 @@
+# Project information
+site_name: "{{cookiecutter.project_name}}"
+site_author: "{{cookiecutter.full_name}}"
+site_description: "{{cookiecutter.project_short_description}}"
+
+# Configuration
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - header.autohide
+
+# Page Tree
+nav:
+  - Home: index.md
+  - Hardware:
+      - Overview: hardware/overview.md
+      - Mechanical: hardware/mechanical.md
+      - Wiring: hardware/wiring.md
+  - Design:
+      - design/design.md
+  - Change Log:
+      - CHANGELOG.md
+
+# Repository
+repo_url: "https://github.com/rebma-io/{{cookiecutter.project_slug}}"
+
+# Plugins
+plugins:
+  - search
+  - macros
+  - mermaid2
+
+# Markdown Extensions
+markdown_extensions:
+  - abbr
+  - attr_list
+  - admonition
+  - footnotes
+  - meta
+  - pymdownx.details
+  - pymdownx.snippets
+  - pymdownx.smartsymbols
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tabbed
+  - pymdownx.tilde
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:mermaid2.fence_mermaid
+  - pymdownx.keys
+  - pymdownx.tasklist:
+      clickable_checkbox: true
+      custom_checkbox: true
+  - pymdownx.arthmatex:
+      generic: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+# Extra Javascript
+extra_javascript:
+  - https://unpkg.com/mermaid@10.9.0/dist/mermaid.min.js
+
+# Copyright
+copyright: "Copyright {% now 'local', '%Y' %} {{cookiecutter.full_name}}"
