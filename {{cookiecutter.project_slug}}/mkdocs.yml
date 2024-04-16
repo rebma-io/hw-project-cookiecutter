@@ -25,6 +25,7 @@ nav:
     - Overview: hardware/README.md
     - Mechanical: hardware/mechanical.md
     - Wiring: hardware/wiring.md
+    - Datasheets: hardware/datasheets/README.md
   - Software: software/README.md
   {% if cookiecutter.create_blog == "y" %}- Updates: updates/index.md{% endif %}
   {% if cookiecutter.create_changelog == "y" %}- Changelog: CHANGELOG.md{% endif %}
@@ -73,6 +74,9 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:mermaid2.fence_mermaid
+        - name: wireviz
+          class: wireviz
+          format: !!python/name:wireviz_fences.fence_wireviz
   - pymdownx.keys
   - pymdownx.tasklist:
       clickable_checkbox: true
