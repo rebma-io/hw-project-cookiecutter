@@ -6,6 +6,9 @@ install:
 build:
 	poetry run mkdocs build
 
+ghdocs:
+	poetry run mkdocs gh-deploy --force
+
 serve: build
 	poetry run mkdocs serve
 
